@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aroma Cafe | Սուրճի աշխարհ</title>
+  <meta name="description" content="Բացահայտիր Aroma Cafe-ի սուրճերի և աղանդերի աշխարհը։">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="#home">AROMA<span>.</span></a>
+
+    <nav class="nav">
+      <a href="#home">Գլխավոր</a>
+      <a href="#menu">Մենյու</a>
+      <a href="#about">Մեր մասին</a>
+      <a href="#contact">Կապ</a>
+    </nav>
+
+    <button class="cart-button" id="open-cart">
+      Զամբյուղ <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">ՔՈ ԱՄԵՆԱՀԱՃԵԼԻ ՍՈՒՐՃԻ ՎԱՅՐԸ</p>
+        <h1>Ամեն բաժակում՝<br><span>մի փոքր կախարդանք</span></h1>
+        <p class="hero-text">
+          Բացահայտիր թարմ սուրճի բույրը և վայելիր
+          քո օրվա ամենահաճելի պահը։
+        </p>
+        <a class="primary-button" href="#menu">Դիտել մենյուն ↓</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=85"
+          alt="Թարմ պատրաստված սուրճ"
+        >
+        <div class="image-label">Made with love ☕</div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">ՄԵՐ ՄԵՆՅՈՒՆ</p>
+        <h2>Ընտրիր քո սիրելին</h2>
+        <p>Թարմ պատրաստված սուրճ՝ ամեն ճաշակի համար։</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-category="all">Բոլորը</button>
+        <button class="filter" data-category="coffee">Սուրճ</button>
+        <button class="filter" data-category="cold">Սառը ըմպելիքներ</button>
+        <button class="filter" data-category="dessert">Աղանդեր</button>
+      </div>
+
+      <div class="products" id="products">
+        <article class="product-card" data-category="coffee">
+          <img
+            src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=700&q=80"
+            alt="Կապուչինո"
+          >
+          <div class="product-info">
+            <p class="product-category">ՍՈՒՐՃ</p>
+            <h3>Կապուչինո</h3>
+            <p>Նուրբ փրփուր և հարուստ համ։</p>
+            <div class="product-bottom">
+              <strong>1,200 ֏</strong>
+              <button class="add-button" data-name="Կապուչինո" data-price="1200">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="coffee">
+          <img
+            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80"
+            alt="Էսպրեսսո"
+          >
+          <div class="product-info">
+            <p class="product-category">ՍՈՒՐՃ</p>
+            <h3>Էսպրեսսո</h3>
+            <p>Փոքր բաժակ, ուժեղ բնավորություն։</p>
+            <div class="product-bottom">
+              <strong>800 ֏</strong>
+              <button class="add-button" data-name="Էսպրեսսո" data-price="800">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="cold">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+            alt="Սառը սուրճ"
+          >
+          <div class="product-info">
+            <p class="product-category">ՍԱՌԸ ԸՄՊԵԼԻՔ</p>
+            <h3>Այս Լատտե</h3>
+            <p>Սառը, թարմացնող և հաճելի։</p>
+            <div class="product-bottom">
+              <strong>1,500 ֏</strong>
+              <button class="add-button" data-name="Այս Լատտե" data-price="1500">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="dessert">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+            alt="Շոկոլադե տորթ"
+          >
+          <div class="product-info">
+            <p class="product-category">ԱՂԱՆԴԵՐ</p>
+            <h3>Շոկոլադե տորթ</h3>
+            <p>Համեղ լրացում քո սուրճին։</p>
+            <div class="product-bottom">
+              <strong>1,800 ֏</strong>
+              <button class="add-button" data-name="Շոկոլադե տորթ" data-price="1800">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="coffee">
+          <img
+            src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80"
+            alt="Լատտե"
+          >
+          <div class="product-info">
+            <p class="product-category">ՍՈՒՐՃ</p>
+            <h3>Լատտե</h3>
+            <p>Կաթնային փափկություն՝ ամեն կումում։</p>
+            <div class="product-bottom">
+              <strong>1,400 ֏</strong>
+              <button class="add-button" data-name="Լատտե" data-price="1400">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="dessert">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+            alt="Քաղցր աղանդեր"
+          >
+          <div class="product-info">
+            <p class="product-category">ԱՂԱՆԴԵՐ</p>
+            <h3>Քաղցր դեսերտ</h3>
+            <p>Փոքրիկ հաճույք՝ օրվա ցանկացած ժամին։</p>
+            <div class="product-bottom">
+              <strong>1,000 ֏</strong>
+              <button class="add-button" data-name="Քաղցր դեսերտ" data-price="1000">+ Ավելացնել</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">ՄԵՐ ՓԻԼԻՍՈՓԱՅՈՒԹՅՈՒՆԸ</p>
+        <h2>Սուրճից ավելին։<br><span>Զգացողություն։</span></h2>
+      </div>
+      <p>
+        Aroma Cafe-ում յուրաքանչյուր բաժակ պատրաստվում է
+        սիրով։ Մենք հավատում ենք, որ լավ սուրճը կարող է
+        փոխել օրվա տրամադրությունը։
+      </p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">ԿԱՊ ՄԵԶ ՀԵՏ</p>
+      <h2>Հանդիպենք սուրճի շուրջ ☕</h2>
+      <p>Հասցե՝ Երևան, Հայաստան</p>
+      <p>Աշխատանքային ժամեր՝ 09:00–22:00</p>
+      <a class="primary-button" href="mailto:hello@aromacafe.example">
+        Գրել մեզ
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">AROMA<span>.</span></a>
+    <p>© <span id="year"></span> Aroma Cafe։ Բոլոր իրավունքները պաշտպանված են։</p>
+  </footer>
+
+  <!-- Զամբյուղի պատուհան -->
+  <div class="modal hidden" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="modal-content">
+      <button class="close-button" id="close-cart" aria-label="Փակել">×</button>
+      <h2 id="cart-title">Քո զամբյուղը</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        Ընդհանուր՝ <strong id="cart-total">0 ֏</strong>
+      </div>
+      <button class="primary-button checkout-button" id="checkout">
+        Շարունակել պատվերը
+      </button>
+      <p class="small-note">Սա ցուցադրական նախագիծ է․ իրական պատվեր դեռ չի ուղարկվում։</p>
+    </div>
+  </div>
+
+  <!-- Պատվերի ձև -->
+  <div class="modal hidden" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-title">
+    <form class="modal-content" id="order-form">
+      <button type="button" class="close-button" id="close-order" aria-label="Փակել">×</button>
+      <h2 id="order-title">Պատվերի տվյալները</h2>
+
+      <label for="customer-name">Անուն</label>
+      <input id="customer-name" name="name" type="text" required placeholder="Քո անունը">
+
+      <label for="customer-phone">Հեռախոսահամար</label>
+      <input id="customer-phone" name="phone" type="tel" required placeholder="+374 ...">
+
+      <label for="customer-address">Հասցե</label>
+      <input id="customer-address" name="address" type="text" required placeholder="Առաքման հասցեն">
+
+      <button class="primary-button checkout-button" type="submit">Հաստատել ցուցադրական պատվերը</button>
+      <p class="small-note">Տվյալները սերվեր չեն ուղարկվում։</p>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
